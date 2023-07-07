@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1><center><u>Conditional Statements</u></center></h1>
+    <h2>if Statements</h2>
+    <p id="check1">Number is odd</p>
+    <script>
+        var x = 10;
+        
+        if(x%2==0){
+            // ans == "Number "+x +" is even";
+            document.getElementById("check1").innerHTML="Number "+x+" is even";
+        }
+    </script>
+<hr>
+    <h2>if_else Statements</h2>
+    <p id="check2"></p>
+    <script>
+        var x=20;
+        var y=30;
+         if(x>y){
+            document.getElementById("check2").innerHTML="x = 20 which is greater than y=30";
+         }
+         else{
+            document.getElementById("check2").innerHTML="x = 20 which is less than y=30";
+
+         }
+    </script>
+<hr>
+    <h2>else_if Statements</h2>
+    <p id="check3"></p>
+    <script>
+        var x=20;
+        var y=30;
+         if(x>y){
+            document.getElementById("check3").innerHTML="x is greater than y";
+         }
+         else if(y>x){
+            document.getElementById("check3").innerHTML="x is less than y";
+
+         }
+         else{
+            document.getElementById("check3").innerHTML="both are equal";
+
+         }
+    </script>
+<hr>
+    <h2>else_if Statements</h2>
+    <p id="check4"></p>
+    <script>
+        x=10;
+        switch(x){
+            case 10:
+                document.getElementById("check4").innerHTML="You are minor!!";
+                break;
+            case 18:
+                document.getElementById("check4").innerHTML="You are adult";
+                break;
+            case 60:
+                document.getElementById("check4").innerHTML="You are Senior";
+                break;
+            default:
+                document.getElementById("check4").innerHTML="Give valid input!!";
+                break;
+              
+        }
+    </script>
+</body>
+</html>
